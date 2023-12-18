@@ -1,0 +1,67 @@
+.clint-navigation button{
+    margin: 10px;
+    padding: 5px 20px;
+    width: 100px;
+}
+
+.openticket{
+    background-color: blanchedalmond;
+}
+.openticket .newitem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.openticket .newitem button{
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.clint-Name{
+    text-align: center;
+}
+
+.active-tabs{
+    background: rgb(188, 234, 120);
+    border-bottom: 2px solid goldenrod;
+}
+
+.active-tabs::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100%+2px);
+    height: 5px;
+    background-color: rgb(241, 29, 29);
+}
+.clint-content{
+ display:none;
+}
+
+.active-clint-cotent{
+    display: block;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .clint-options button{
+      font-size: 10px;
+      padding: 7px;
+    } 
+    .clint-navigation button{
+        font-size: 10px;
+        padding: 7px;
+        font-weight: bold;
+    } 
+    .openticket .newitem button{
+        font-size: 11px;
+        padding: 5px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+  
+}
